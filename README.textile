@@ -11,7 +11,10 @@ h2. Usage
 <pre>
   $('#container').scrollLoader({
     ajaxType: 'get',
-    ajaxUrl : '/photos.json'
+    ajaxUrl : '/photos.json',
+    success : function(data) {
+      // build your views here!
+    }
   });
 </pre>
 
