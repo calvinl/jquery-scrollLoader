@@ -1,14 +1,10 @@
 h1. jQuery (Infinite) scrollLoader
 
-scrollLoader is a jQuery plugin for infinite scrolling. It's very
-light weight allowing for a wider range of backend implementations
-of infinite scrolling to be possible. It simply wraps jQuery's
-@$.ajax()@ method and calls the specified url when scrolling hits
-the bottom of the page.
+scrollLoader is a jQuery plugin for infinite scrolling. It's very light weight allowing for a wider range of backend implementations of infinite scrolling to be possible. It simply wraps jQuery's @$.ajax()@ method and calls the specified url when scrolling hits the bottom of the page.
 
 h2. Requirements
 
-scrollLoader requires include jQuery UI's Widget Factory plugin.
+scrollLoader requires jQuery UI's Widget Factory plugin.
 
 h2. Usage
 
@@ -21,23 +17,16 @@ h2. Usage
 
 h2. Options
 
-@loadFirst@ - @bool@ - Loads the first page of data immediately after
-the plugin is called. Good for showing the first page of stuff without
-having to scroll first. Default: @true@
+@loadFirst@ - @bool@ - Loads the first page of data immediately after the plugin is called. Good for showing the first page of stuff without having to scroll first. Default: @true@
 
-@scrollElem@ - @dom element@ - The element to bind the @scroll@ event to.
-Default: @window@
+@scrollElem@ - @dom element@ - The element to bind the @scroll@ event to. Default: @window@
 
 @ajaxType@ - @string@ - Same as @type@ for @$.ajax()@. Default @'get'@
 @ajaxData@ - @object@ - Same as @data@ for @$.ajax()@.
 @ajaxUrl@  - @string  - Same as @url@ for @$.ajax()@.
 
-@limit@ - @int@ - Sent via AJAX as a parameter if @ajaxData@ is not
-specified. Default
+@limit@ - @int@ - Sent via AJAX as a parameter if @ajaxData@ is not specified. Default
 
-@success@ - @function@ - Callback function when AJAX finishes. Same as
-@success@ callback for @$.ajax()@.
+@success@ - @function@ - Callback function when AJAX finishes. Same as @success@ callback for @$.ajax()@.
 
-@allowOvershoot@ - @bool@ - Allow loading when the scrolling overshoots
-the size of the document. (Happens on devices with inertial scrolling,
-e.g. iOS, Mac OSX.)
+@allowOvershoot@ - @bool@ - Allow loading when the scrolling overshoots the size of the document. (Happens on devices with inertial scrolling, e.g. iOS, Mac OSX.)
